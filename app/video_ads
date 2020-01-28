@@ -1,8 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<vmap:VMAP xmlns:vmap="http://www.iab.net/videosuite/vmap" version="1.0">
-   <vmap:AdBreak breakId="postroll" breakType="linear" timeOffset="end">
-      <vmap:AdSource id="postroll-ad-1" followRedirects="true" allowMultipleAds="false">
-         <vmap:AdTagURI templateType="vast3"><![CDATA[https://pubads.g.doubleclick.net/gampad/ads?iu=/21852615636/muud.com.tr/android_video_postroll&description_url=https%3A%2F%2Fwww.muud.com.tr&tfcd=0&npa=0&sz=400x300%7C640x480&gdfp_req=1&output=vast&unviewed_position_start=1&env=vp&correlator=%5bplaceholder%5d&vpmute=1&vpa=0&vad_format=linear&url=https%3A%2F%2Fwww.muud.com.tr&vpos=postroll&rdid=%5bplaceholder%5d&is_lat=%5bplaceholder%5d&idtype=adid&an=com.ttnet.muzik%26hl%3Den]]></vmap:AdTagURI>
-      </vmap:AdSource>
-   </vmap:AdBreak>
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<vmap:VMAP version="1.0" xmlns:vmap="http://www.iab.net/videosuite/vmap">
+<vmap:AdBreak breakId="postroll" breakType="linear" timeOffset="end">
+<vmap:AdSource id="postroll-ad-1" followRedirects="true" allowMultipleAds="false">
+<vmap:AdTagURI templateType="vast3">
+<![CDATA[
+https://pubads.g.doubleclick.net/gampad/ads?slotname=/124319096/external/ad_rule_samples&sz=640x480&ciu_szs=300x250&cust_params=deployment%3Ddevsite%26sample_ar%3Dpostonly&url=https://developers.google.com/interactive-media-ads/docs/sdks/html5/tags&unviewed_position_start=1&output=xml_vast3&impl=s&env=vp&gdfp_req=1&ad_rule=0&vad_type=linear&vpos=postroll&pod=1&ppos=1&lip=true&min_ad_duration=0&max_ad_duration=30000&vrid=6016&video_doc_id=short_onecue&cmsid=496&kfa=0&tfcd=0
+]]>
+</vmap:AdTagURI>
+</vmap:AdSource>
+</vmap:AdBreak>
 </vmap:VMAP>
