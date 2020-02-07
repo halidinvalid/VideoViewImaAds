@@ -84,9 +84,7 @@ class MainActivity : AppCompatActivity(), AdEvent.AdEventListener, AdErrorEvent.
             AdEvent.AdEventType.ALL_ADS_COMPLETED -> {
                 mAdsManager.destroy()
             }
-            else -> {
-                //no-op
-            }
+            else -> throw IllegalArgumentException("Invalid type for AdEventType")            
         }
     }
 
