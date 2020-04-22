@@ -53,7 +53,7 @@
 					<CompanionAds>
 						<Companion width="300" height="250">
 							<StaticResource creativeType="image/jpeg">
-             http://demo.examplemedia.com/vast/this_is_the_ad.jpg
+            https://mobilws.muud.com.tr/TTNETMuzikMobil/images/cache/450/album_764023_450_450.jpg?cacheID=1585513071
              </StaticResource>
 							<TrackingEvents>
 								<Tracking event="creativeView">http://myTrackingURL/tracking</Tracking>
