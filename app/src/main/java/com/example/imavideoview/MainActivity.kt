@@ -4,10 +4,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
 import com.google.ads.interactivemedia.v3.api.*
 import com.google.ads.interactivemedia.v3.api.player.ContentProgressProvider
 import com.google.ads.interactivemedia.v3.api.player.VideoProgressUpdate
-import kotlinx.android.synthetic.main.activity_main.*
 
 //arda commitasas
 class MainActivity : AppCompatActivity(), AdEvent.AdEventListener, AdErrorEvent.AdErrorListener {
@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity(), AdEvent.AdEventListener, AdErrorEvent.
     private lateinit var mAdsManager: AdsManager
     private var mIsAdDisplay: Boolean = false
     private lateinit var adsDisplayContainer: AdDisplayContainer
-
+    lateinit var videoPlayerView: VideoPlayerView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity(), AdEvent.AdEventListener, AdErrorEvent.
 
         mSdkFactory = ImaSdkFactory.getInstance()
         adsDisplayContainer = mSdkFactory.createAdDisplayContainer()
-        adsDisplayContainer.adContainer = videoPlayerWithAdPlayback
+        adsDisplayContainer.adContainer = findViewById(R.id.videoPlayerWithAdPlayback)
         val settings = mSdkFactory.createImaSdkSettings()
         mAdsLoader = mSdkFactory.createAdsLoader(this, settings, adsDisplayContainer)
 
@@ -37,12 +37,13 @@ class MainActivity : AppCompatActivity(), AdEvent.AdEventListener, AdErrorEvent.
             mAdsManager.addAdEventListener(this)
             mAdsManager.init()
         }
-
+        videoPlayerView = findViewById<VideoPlayerView>(R.id.videoPlayerView)
         videoPlayerView.addVideoCompletedListener(object :
             VideoPlayerView.OnVideoCompletedListener {
             override fun onVideoCompleted() = mAdsLoader.contentComplete()
         })
 
+        val playButton = findViewById<ImageButton>(R.id.playButton)
         playButton.setOnClickListener {
             videoPlayerView.setVideoPath(getString(R.string.content_url))
             requestAds(getString(R.string.ad_tag_url))
@@ -85,7 +86,7 @@ class MainActivity : AppCompatActivity(), AdEvent.AdEventListener, AdErrorEvent.
             AdEvent.AdEventType.ALL_ADS_COMPLETED -> {
                 mAdsManager.destroy()
             }
-            else -> throw IllegalArgumentException("Invalid type for AdEventType")            
+            else -> throw IllegalArgumentException("Invalid type for AdEventType")
         }
     }
 
