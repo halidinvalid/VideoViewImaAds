@@ -9,7 +9,7 @@ import com.google.ads.interactivemedia.v3.api.player.ContentProgressProvider
 import com.google.ads.interactivemedia.v3.api.player.VideoProgressUpdate
 import kotlinx.android.synthetic.main.activity_main.*
 
-//arda commitaaa
+//arda comm
 class MainActivity : AppCompatActivity(), AdEvent.AdEventListener, AdErrorEvent.AdErrorListener {
 
     private lateinit var mSdkFactory: ImaSdkFactory
