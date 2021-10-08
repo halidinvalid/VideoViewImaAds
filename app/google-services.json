@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "604382619609",
+    "project_id": "videoviewimaads",
+    "storage_bucket": "videoviewimaads.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:604382619609:android:9cd7b374ad3cd84b2c5bc8",
+        "android_client_info": {
+          "package_name": "com.example.imavideoview"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "604382619609-ns1fl65gu7dko6jc23og7m2vh17l9b5l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-fdhmVYDjOZ3PV7Eo7NLNDd0fQBK64rc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "604382619609-ns1fl65gu7dko6jc23og7m2vh17l9b5l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
