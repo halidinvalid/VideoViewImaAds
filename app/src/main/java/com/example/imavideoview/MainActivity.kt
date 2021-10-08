@@ -9,7 +9,7 @@ import com.google.ads.interactivemedia.v3.api.*
 import com.google.ads.interactivemedia.v3.api.player.ContentProgressProvider
 import com.google.ads.interactivemedia.v3.api.player.VideoProgressUpdate
 
-//arda commitasas asdasd
+
 class MainActivity : AppCompatActivity(), AdEvent.AdEventListener, AdErrorEvent.AdErrorListener {
 
     private lateinit var mSdkFactory: ImaSdkFactory
