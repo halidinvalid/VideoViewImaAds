@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity(), AdEvent.AdEventListener, AdErrorEvent.
             mAdsManager.addAdEventListener(this)
             mAdsManager.init()
         }
-        videoPlayerView = findViewById<VideoPlayerView>(R.id.videoPlayerView)
+        videoPlayerView = findViewById(R.id.videoPlayerView)
         videoPlayerView.addVideoCompletedListener(object :
             VideoPlayerView.OnVideoCompletedListener {
             override fun onVideoCompleted() = mAdsLoader.contentComplete()
