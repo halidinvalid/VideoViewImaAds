@@ -6,7 +6,7 @@ import android.util.AttributeSet
 import android.widget.MediaController
 import android.widget.VideoView
 import java.lang.UnsupportedOperationException
-//jenkins1 denem
+//jenkins1 denemeee
 class VideoPlayerView : VideoView {
 
     private var onVideoCompletedListener = ArrayList<OnVideoCompletedListener>()
